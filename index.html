@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SheCodes/Final Project 🙂</title>
+
+    <style>
+        body {
+            background: #ecdd36;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            color: blue;
+            border: 10px inset rgb(52, 112, 77);
+            padding: 20px 10px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+            border: 10px inset rgb(52, 112, 77);
+        }
+
+        p {
+            line-height: 2;
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+
+        .learn-more {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: blue;
+            padding-top: 10px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: rgb(40, 68, 133);
+            font-size: 15px;
+            color: whitesmoke;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px grey;
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            What is Happiness?
+            <br />
+            <br />
+            🙂
+        </h1>
+        <h2>How to stay mentally healthy during Covid</h2>
+        <img src="https://www.thebestofhealth.co.uk/wp-content/uploads/shutterstock_282943754.jpg"
+            alt="Mental-Health" />
+        <p>
+            One can say that happiness lies within our brain, others say its the
+            people around us that makes us happy. Authentic happiness comes from
+            within. It comes from making wise choices, including choosing to be
+            happy. When our external situation is going well, it might make it
+            easier for us to choose happiness, but it is not the cause of it. You
+            can be happy even when things around you are nothing like you would like
+            them to be.
+            <strong>
+                <em>Especially during these hard times of Covid. </em>
+            </strong>
+            <br />
+            <a href="https://www.who.int/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---mental-health?gclid=Cj0KCQjw-uH6BRDQARIsAI3I-Udot39QJq_33qFfyn1HkHwPb5LkSQyfVMRZtW7A-qop7cQOsNbhaVsaAgQ_EALw_wcB"
+                target="_blank" class="learn-more">
+                Learn more on World Health Organization
+            </a>
+            <button>Click to learn more</button>
+            This page was built by
+            <a href="https://www.linkedin.com/in/karla-bedeau-457a65157/" target="_blank" class="footer">
+                Karla Bedeau
+            </a>
+        </p>
+    </div>
+    <script>
+        function clickHappiness() {
+            let fullName = prompt("What's your name?");
+            let email = prompt("What's your email address?");
+            let temperature = prompt("What's your body temperature?");
+
+            if (temperature >= 100) {
+                alert("Please get some rest, and get tested if conditions worsen.");
+            } else {
+                if (temperature <= 98) {
+                    alert("Thank you," + " " + name + " " + "stay safe!");
+                }
+            }
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", clickHappiness);
+    </script>
+</body>
+
+</html>
